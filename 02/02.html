@@ -8,6 +8,9 @@
             
             <h1>{{title}}</h1>
 
+            <input type="text" v-model="newShoe"/>
+            <button v-on:click="addShoe">Agregar</button>
+
             <ul>
                 <li v-for="fruit of fruits">{{fruit}}</li>
             </ul>
@@ -20,6 +23,6 @@
 
         </div>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-        <script src="01.js"></script>
+        <script src="02.js"></script>
     </body>
 </html>

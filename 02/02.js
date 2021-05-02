@@ -6,6 +6,17 @@ const app = new Vue({
         shoes: [
             {name: 'converse', quantity: 10},
             {name: 'bailarinas', quantity: 0}
-        ]
+        ],
+        newShoe: ''
+    },
+    methods: {
+        // antiguo addShoe: function() {}
+        // actual !!!
+        addShoe () {
+            this.shoes.push({
+                name: this.newShoe,
+                quantity: 0
+            })
+        }
     }
 })
