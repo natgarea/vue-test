@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hola Mundo con Vue.js</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="components/saludos.js"></script>
+        <script src="components/contador.js"></script>
+    </head>
+    <body>
+
+        <div id="app">
+            
+            <saludo></saludo>
+            <contador></contador>
+            
+        </div>
+
+        
+        <script>
+            const app = new Vue({
+                el: '#app'
+            });
+        </script>
+    
+    </body>
+</html>
