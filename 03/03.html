@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hola Mundo con Vue.js</title>
+    </head>
+    <body>
+        <div id="app">
+            
+            <h1>{{title}}</h1>
+
+            <input type="text" v-model="newShoe" @keyup.enter="addShoe"/>
+            <button @click="addShoe">Agregar</button>
+
+            <ul>
+                <li v-for="fruit of fruits">{{fruit}}</li>
+            </ul>
+
+            <ul>
+                <li v-for="shoe of shoes">
+                    <input type="number" v-model.number="shoe.quantity"/>
+                     - {{shoe.name}}
+                     <button @click="shoe.quantity++">+</button>
+                    <span v-if="shoe.quantity === 0">- Sin stock</span>
+                </li>
+            </ul>
+
+            <h4>Total : {{sumShoes}}</h4>
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+        <script src="03.js"></script>
+    </body>
+</html>
